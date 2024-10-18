@@ -2,15 +2,15 @@ import React, {useEffect} from 'react';
 import {Provider, useSelector} from 'react-redux';
 import {NavigationContainer} from '@react-navigation/native';
 import {createDrawerNavigator} from '@react-navigation/drawer';
-import {loadWishlist} from './core/store/recipesSlice';
 import ProfileScreen from './src/screens/ProfileScreen';
 import RecipesListScreen from './src/screens/RecipesListScreen';
 import WishlistScreen from './src/screens/WishlistScreen';
 import LoginScreen from './src/screens/LoginScreen';
 import RecipeDetailScreen from './src/screens/RecipeDetailScreen';
 import SplashScreen from 'react-native-splash-screen';
-import {LogoutButton} from './core/components/LogoutButton';
-import {RootState, store} from './core/store/store';
+import {RootState, store} from './src/core/store/store';
+import {LogoutButton} from './src/core/components/LogoutButton';
+import {loadWishlist} from './src/core/store/recipesSlice';
 
 const Drawer = createDrawerNavigator();
 

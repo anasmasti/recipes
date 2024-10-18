@@ -10,9 +10,9 @@ import {
 import useSWR from 'swr';
 import axios from 'axios';
 import {useDispatch, useSelector} from 'react-redux';
-import {setRecipes, toggleWishlist} from '../../core/store/recipesSlice';
-import {Recipe} from '../../core/types/Recipe';
-import {RootState} from '../../core/store/store';
+import {setRecipes, toggleWishlist} from '../core/store/recipesSlice';
+import {Recipe} from '../core/types/Recipe';
+import {RootState} from '../core/store/store';
 
 const fetcher = (url: string) => axios.get(url).then(res => res.data.recipes);
 

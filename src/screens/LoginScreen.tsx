@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {View, TextInput, Button, Text} from 'react-native';
 import {useDispatch} from 'react-redux';
-import {setUser, setToken} from '../../core/store/authSlice';
+import {setUser, setToken} from '../core/store/authSlice';
 
 const LoginScreen = ({navigation}: any) => {
   const [username, setUsername] = useState('');

@@ -1,6 +1,6 @@
 import axios from 'axios';
-import {setToken, logout} from '../../core/store/authSlice';
-import {store} from '../../core/store/store';
+import {setToken, logout} from '../core/store/authSlice';
+import {store} from '../core/store/store';
 
 export const fetcher = async (url: string) => {
   const state = store.getState();

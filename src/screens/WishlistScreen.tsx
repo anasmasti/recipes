@@ -8,8 +8,8 @@ import {
   Image,
 } from 'react-native';
 import {useSelector, useDispatch} from 'react-redux';
-import {toggleWishlist} from '../../core/store/recipesSlice';
-import {RootState} from '../../core/store/store';
+import {RootState} from '../core/store/store';
+import {toggleWishlist} from '../core/store/recipesSlice';
 
 const WishlistScreen = ({navigation}: any) => {
   const dispatch = useDispatch();
